@@ -10,8 +10,7 @@ docker build /Users/swimlane/Dockerfile
 ```
 once docker image is build we need to check like is it available in local system , 
 command to check images 
-`
-``
+```
 docker images
 ```
 
