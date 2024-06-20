@@ -75,7 +75,7 @@ kubectl get pods | grep running
 
    create one directory like workspace for terraform project 
    create files like. 
-   
+ ```  
    versions.tf - will be having resources versions 
    main.tf - having instructions to resource setup 
    vpc.tf - VPC ranges subnets have been added 
@@ -83,5 +83,5 @@ kubectl get pods | grep running
    variable.tf - if we have are variables like region, type we can use 
    output.tf - having details like once infra is created from main.tf it will show us like what reourses we have created in human readable format 
    to standaridize structure have added multiple files to create setup , it's like we easy to troubleshoot files by seeing errors 
-  
+ ``` 
  
