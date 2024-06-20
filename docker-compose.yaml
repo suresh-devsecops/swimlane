@@ -1,0 +1,15 @@
+version: '3'                           # compose version 
+services:                              # top level descriptions 
+  node:                                # base image
+    image: "smilane:some_version"      # image which we created in previous task 
+    ports:                             # which ports we need to use we define in spec
+      - "3000:3000"                    # which port we are trying to expose 
+    command: "npm start"               # run command inside container 
+  mongo:                               # base image                   
+    image: mongo                       # Image from docker repository ( it will check image availability in local first,  if it is not available in local then will go to remote repo (docker hub))
+    ports:
+      - 27017:27017                    # which port we are trying to expose 
+    volumes:                           # mount volumes 
+      - mongodb: /                     # volume for mango 
+volumes:
+ mongodb:                              # volume defination for mango 
