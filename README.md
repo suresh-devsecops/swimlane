@@ -85,3 +85,6 @@ kubectl get pods | grep running
    to standaridize structure have added multiple files to create setup , it's like we easy to troubleshoot files by seeing errors 
  ``` 
  
+#6. Using Ansible to ensure NTP is installed and running on the worker nodes
+
+install_ntp.yaml - we can group workernodes as worker_nodes then we can execute playbook to install ntp and start
