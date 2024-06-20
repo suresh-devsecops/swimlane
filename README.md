@@ -1,7 +1,7 @@
 # swimlane practical 
 1. Dockerize https://github.com/swimlane/devops-practical
 ##
-have attcahed Dockerfile with image instructions.
+I have attcahed Dockerfile with image instructions.
 need to download that dockerfile to local system where docker deamon already running,
 lets say we have downloaded file into local system dir (/Users/swimlane/)
 then need to run below commands, 
@@ -19,5 +19,5 @@ docker tag ImageID swimlane:some_version
 ```
 once tagging is done we need to run that image
 ```
-docker run swimlane:some_version
+docker run swimlane:some_version -p 3000:3000
 
